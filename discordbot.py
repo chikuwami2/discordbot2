@@ -21,10 +21,6 @@ async def on_message(message):
     if message.author.bot:
         return
 
-    if message.content == '/test blacklist':
-        test_blacklist = 1
-        await message.channel.send('ブラックリストかどうか検知するよ！！')
-
     if message.content == 'わんこ！':
         await message.channel.send(f'{message.author.mention} なーに？？(｀･ω･´)✨')
         # await message.channel.send(file=discord.File("cat.png"))
