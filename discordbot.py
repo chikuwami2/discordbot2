@@ -53,6 +53,12 @@ async def on_message(message):
         test_blacklist = 1
         await message.channel.send('ブラックリストかどうか検知するよ！！')
 
+    if message.content == 'sample1':
+        # guild = message.guild
+        # role = guild.get_role(704869601892106310)
+        await message.channel.send(message.author.role)
+        # await message.channel.send(file=discord.File("cat.png"))
+
     if message.content == 'わんこ！':
         await message.channel.send(f'{message.author.mention} なーに？？(｀･ω･´)✨')
         # await message.channel.send(file=discord.File("cat.png"))
